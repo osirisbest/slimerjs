@@ -8,6 +8,6 @@ page.open(url, function (status) {
         console.log('message from the web page');
         return document.querySelector(selector).textContent;
     });
-    console.log('The  ' + mainTitle);
+    console.log(`The value of ${selector} is ${mainTitle}`);
     slimer.exit()
 });

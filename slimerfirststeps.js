@@ -6,10 +6,8 @@ page.open(url, function (status) {
     var content = page.evaluate(function () {
         var selector=".base"
         console.log('message from the web page');
-        return {content:document.querySelector(selector).textContent,
-            selector
-        };
-    });
+        return  {content:document.querySelector(selector).textContent, selector
+                }                            });
     console.log(`The value is ${JSON.stringify( content)}`);
     slimer.exit()
 });

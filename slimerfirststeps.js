@@ -21,19 +21,9 @@ page.open(url)
     //console.log(`The value is ${JSON.stringify( content)}`);
     slimer.wait(2000)
     var val=page.evaluate(function(){
-        //var evt = document.createEvent("MouseEvents")
-        //evt.initMouseEvent("click", true, true, window,
-        //0, 0, 0, 0, 0, false, false, false, false, 0, null)
-        //slimer.wait(1000)
         let selectors=document.querySelector('.swatch-option')
-        // console.log(selectors)
-        //setTimeout(()=>{
         selectors.click()
         console.log('click')
-        //}
-        //,2000)
-        
-        //return selectors.dispatchEvent(evt)
     }
     
     )
